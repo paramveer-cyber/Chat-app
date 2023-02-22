@@ -33,27 +33,27 @@
       function user_joined_msg(name){
           if (name==="Hello world!"){return 0}
           let element = document.createElement("div")
-          element.innerText = `${name} joined the chat`
+          element.innerText = name + " joined the chat"
           element.classList.add("user_msg")
           query.append(element)
       }
       function user_disconnect_msg(name){
           if (name==="Hello world!"){return 0}
           let element = document.createElement("div")
-          element.innerText = `${name} left the chat`
+          element.innerText = name + " left the chat"
           element.classList.add("user_msg")
           query.append(element)
       }
       function send_msg(msg){
           let element = document.createElement("div")
-          element.innerText = `You: ${msg}`
+          element.innerText = "You: " + msg
           element.classList.add("msg")
           element.classList.add("text2")
           query.append(element)
       }
       function receive_msg(name, msg){
           let element = document.createElement("div")
-          element.innerText = `${name}: ${msg}`
+          element.innerText = name + ": " + msg
           element.classList.add("msg")
           element.classList.add("text1")
           query.append(element)
