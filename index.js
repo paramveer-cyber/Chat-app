@@ -59,6 +59,5 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', (req, res) => {
   res.type('html').send(html)
 })
-
 app.listen(port, () => {
 })
